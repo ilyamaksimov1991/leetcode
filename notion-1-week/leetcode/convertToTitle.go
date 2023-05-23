@@ -1,10 +1,11 @@
 package leetcode
 
+// time O(n)
+// memory O(n)
 func convertToTitle(columnNumber int) string {
 	b := columnNumber
 
 	res := []rune{}
-
 	if columnNumber <= 26 {
 		return string(byte(columnNumber) + 'A' - 1)
 	}
@@ -13,7 +14,6 @@ func convertToTitle(columnNumber int) string {
 		println(residual)
 		if residual != 0 {
 			res = append(res, rune(residual)+'A'-1)
-			println("yes")
 			b = b - residual
 			continue
 		}

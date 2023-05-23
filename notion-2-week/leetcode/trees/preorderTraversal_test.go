@@ -22,7 +22,7 @@ func Test_preorderTraversal(t *testing.T) {
 					Right: nil,
 				},
 			},
-			output: []int{},
+			output: []int{1, 2, 3},
 		},
 	}
 	for name, tt := range tests {

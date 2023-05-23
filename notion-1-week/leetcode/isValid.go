@@ -1,5 +1,7 @@
 package leetcode
 
+// time O(n)
+// memory O(n)
 func isValid(s string) bool {
 	closed := map[rune]rune{
 		')': '(',
