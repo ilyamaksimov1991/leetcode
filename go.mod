@@ -1,4 +1,4 @@
-module mentor
+module leetcode
 
 go 1.18
 
