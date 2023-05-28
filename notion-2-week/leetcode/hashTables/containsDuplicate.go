@@ -1,5 +1,7 @@
-package leetcode
+package hashTables
 
+// time O(n)
+// memory O(n)
 func containsDuplicate(nums []int) bool {
 	dublicates := make(map[int]struct{}, len(nums))
 

@@ -1,5 +1,7 @@
 package leetcode
 
+// time O(n*2)
+// memory O(1)
 func moveZeroes(nums []int) []int {
 	j := len(nums) - 1
 	for i, num := range nums {
@@ -18,6 +20,8 @@ func moveZeroes(nums []int) []int {
 	return nums
 }
 
+// time O(n)
+// memory O(1)
 func moveZeroes2(nums []int) []int {
 	j := 0
 	for current, num := range nums {

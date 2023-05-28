@@ -1,5 +1,7 @@
 package leetcode
 
+// time O(n)
+// memory O(n)
 func sortedSquares(nums []int) []int {
 	res := make([]int, len(nums))
 	i, j := 0, len(nums)-1

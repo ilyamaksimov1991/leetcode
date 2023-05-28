@@ -1,5 +1,7 @@
 package leetcode
 
+// time O(n)
+// memory O(n)
 func twoSum(nums []int, target int) []int {
 	keys := make([]int, 0, 2)
 	valToKey := make(map[int]int)

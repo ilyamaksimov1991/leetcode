@@ -1,5 +1,7 @@
 package leetcode
 
+// time O(n)
+// memory O(1)
 func removeDuplicates(nums []int) ([]int, int) {
 	k := 1
 	for i := 1; i < len(nums); i++ {

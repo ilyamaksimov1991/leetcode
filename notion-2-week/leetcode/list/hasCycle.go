@@ -1,7 +1,8 @@
 package list
 
+// time O(n)
+// memory O(n)
 func hasCycle(head *ListNode) bool {
-	println(head)
 	addr := make(map[*ListNode]bool)
 	i := 0
 	for head != nil {
@@ -14,4 +15,18 @@ func hasCycle(head *ListNode) bool {
 		head = head.Next
 	}
 	return false
+}
+
+// time O(n)
+// memory O(1)
+func hasCycle2(head *ListNode) bool {
+	if head == nil || head.Next == nil {
+		return false
+	}
+	slow, fast := head, head.Next
+	for fast != nil && fast.Next != nil && slow != fast {
+		slow, fast = slow.Next, fast.Next.Next
+	}
+
+	return slow == fast
 }

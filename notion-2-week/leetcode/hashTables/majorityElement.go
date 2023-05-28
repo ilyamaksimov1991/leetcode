@@ -1,5 +1,7 @@
-package leetcode
+package hashTables
 
+// time O(n)
+// memory O(1)
 func majorityElement(nums []int) int {
 	candidate := nums[0]
 	count := 1

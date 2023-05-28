@@ -1,5 +1,7 @@
 package leetcode
 
+// time O(n*2)
+// memory O(1)
 func longestCommonPrefix(strs []string) string {
 	for index, val := range strs[0] {
 		for _, str := range strs[1:] {

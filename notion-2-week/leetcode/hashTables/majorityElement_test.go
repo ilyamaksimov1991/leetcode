@@ -1,31 +1,31 @@
-package leetcode
+package hashTables
 
 import (
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
-func Test_distributeCandies(t *testing.T) {
+func Test_majorityElement(t *testing.T) {
 	tests := map[string]struct {
 		input  []int
 		output int
 	}{
-		"0": {
-			input:  []int{1, 1, 2, 2, 3, 3},
+		"1": {
+			input:  []int{3, 2, 3},
 			output: 3,
 		},
-		"1": {
-			input:  []int{1, 1, 2, 3},
+		"2": {
+			input:  []int{2, 2, 1, 1, 1, 2, 2},
 			output: 2,
 		},
-		"2": {
-			input:  []int{6, 6, 6, 6},
+		"3": {
+			input:  []int{1},
 			output: 1,
 		},
 	}
 	for name, tt := range tests {
 		t.Run(name, func(t *testing.T) {
-			assert.Equal(t, tt.output, distributeCandies(tt.input))
+			assert.Equal(t, tt.output, majorityElement(tt.input))
 		})
 	}
 }

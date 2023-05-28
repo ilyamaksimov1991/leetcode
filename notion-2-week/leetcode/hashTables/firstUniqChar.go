@@ -1,5 +1,7 @@
-package leetcode
+package hashTables
 
+// time O(n)
+// memory O(n)
 func firstUniqChar(s string) int {
 	var counts = make([]int, 26)
 

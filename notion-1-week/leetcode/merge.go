@@ -1,5 +1,7 @@
 package leetcode
 
+// time O(n)
+// memory O(1)
 func merge(nums1 []int, m int, nums2 []int, n int) []int {
 	iIndex, jIndex, commonIndex := m-1, n-1, m+n-1
 	for ; jIndex >= 0; commonIndex-- {

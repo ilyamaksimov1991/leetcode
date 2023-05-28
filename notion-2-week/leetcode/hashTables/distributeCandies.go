@@ -1,5 +1,7 @@
-package leetcode
+package hashTables
 
+// time O(n)
+// memory O(n)
 func distributeCandies(candyType []int) int {
 	types := make(map[int]struct{}, len(candyType))
 

@@ -5,6 +5,8 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// time O(n)
+// memory O(1)
 func middleNode(head *ListNode) *ListNode {
 	fast, slow := head, head
 	for fast != nil && fast.Next != nil {

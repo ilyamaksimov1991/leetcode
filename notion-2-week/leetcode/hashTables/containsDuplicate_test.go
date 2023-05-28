@@ -1,4 +1,4 @@
-package leetcode
+package hashTables
 
 import (
 	"github.com/stretchr/testify/assert"

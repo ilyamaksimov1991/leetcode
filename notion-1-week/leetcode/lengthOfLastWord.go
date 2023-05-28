@@ -4,6 +4,8 @@ import (
 	"strings"
 )
 
+// time O(n)
+// memory O(1)
 func lengthOfLastWord(s string) int {
 	res := 0
 	for i := len(s) - 1; i >= 0; i-- {
@@ -18,6 +20,9 @@ func lengthOfLastWord(s string) int {
 	}
 	return res
 }
+
+// time O(n)
+// memory O(1)
 func lengthOfLastWord2(s string) int {
 	parts := strings.Fields(s)
 	return len(parts[len(parts)-1])
