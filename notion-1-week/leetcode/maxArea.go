@@ -1,5 +1,9 @@
 package leetcode
 
+// https://www.code-recipe.com/post/container-with-most-water
+
+// time O(n)
+// memory O(1)
 func maxArea(height []int) int {
 	l, r := 0, len(height)-1
 	maxRes := 0
