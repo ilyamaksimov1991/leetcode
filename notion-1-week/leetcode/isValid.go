@@ -23,8 +23,6 @@ func isValid(s string) bool {
 			q = append(q, val)
 		}
 	}
-	if len(q) > 0 {
-		return false
-	}
-	return true
+
+	return len(q) == 0
 }
