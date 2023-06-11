@@ -43,3 +43,31 @@ func setZeroes(matrix [][]int) {
 		}
 	}
 }
+
+// TODO можно считать за memory O(1)?
+func setZeroes2(matrix [][]int) {
+	mRow := make(map[int]struct{})
+	mCol := make(map[int]struct{})
+
+	for r := 0; r < len(matrix); r++ {
+		for c := 0; c < len(matrix[0]); c++ {
+			if matrix[r][c] == 0 {
+				mRow[r] = struct{}{}
+				mCol[c] = struct{}{}
+			}
+		}
+	}
+
+	for r := 0; r < len(matrix); r++ {
+		for c := 0; c < len(matrix[0]); c++ {
+			if _, ok := mRow[r]; ok {
+				matrix[r][c] = 0
+				continue
+			}
+
+			if _, ok := mCol[c]; ok {
+				matrix[r][c] = 0
+			}
+		}
+	}
+}
